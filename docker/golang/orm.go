@@ -9,7 +9,7 @@ func gormConnect() *gorm.DB {
 	DBMS := "mysql"
 	USER := "root"
 	PASS := "password"
-	PROTOCOL := "tcp(mysql:3306)"
+	PROTOCOL := "tcp(127.0.0.1:3306)"
 	DBNAME := "todo-mysql"
 	PARAMS := "parseTime=True&loc=Asia%2FTokyo"
 

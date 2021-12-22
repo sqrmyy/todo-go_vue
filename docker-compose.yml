@@ -24,13 +24,13 @@ services:
     volumes:
       - ./docker/golang/:/go/src/
     command: sh ./scripts/start_app.sh
-  # vue:
-  #   build: ./docker/client
-  #   ports:
-  #     - 8888:8080
-  #   volumes:
-  #     - ./docker/client:/app
-  #     - /app/node_modules
+  vue:
+    build: ./docker/client
+    ports:
+      - 8888:8080
+    volumes:
+      - ./docker/client:/app
+      - /app/node_modules
 
 volumes:
   db-data:
